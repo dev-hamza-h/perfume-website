@@ -40,7 +40,7 @@ export default function Home()  {
               />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Mystic Blossom</h3>
-                <p className="text-gray-600">A floral scent that captures spring's essence.</p>
+                <p className="text-gray-600">A floral scent that captures spring&apos;s essence.</p>
                 <p className="text-red-600 font-semibold">$29.99 <span className="text-gray-500 line-through">$39.99</span></p>
                 <button className="mt-4 w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-500 transition">
                   Add to Cart
@@ -58,7 +58,7 @@ export default function Home()  {
               />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Ocean Breeze</h3>
-                <p className="text-gray-600">A fresh, aquatic scent perfect for summer days.</p>
+                <p className="text-gray-600">A fresh aquatic scent perfect for summer days.</p>
                 <p className="text-red-600 font-semibold">$24.99 <span className="text-gray-500 line-through">$34.99</span></p>
                 <button className="mt-4 w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-500 transition">
                   Add to Cart
@@ -76,7 +76,7 @@ export default function Home()  {
               />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Amber Night</h3>
-                <p className="text-gray-600">A deep, amber fragrance for evening elegance.</p>
+                <p className="text-gray-600">A deep amber fragrance for evening elegance.</p>
                 <p className="text-red-600 font-semibold">$34.99 <span className="text-gray-500 line-through">$44.99</span></p>
                 <button className="mt-4 w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-500 transition">
                   Add to Cart
@@ -192,7 +192,7 @@ export default function Home()  {
       <div className="bg-white shadow-lg rounded-lg p-8">
         <h3 className="text-2xl font-bold mb-6">Our Contact Info</h3>
         <p className="text-gray-700 mb-4">
-          Feel free to reach out to us with any questions, comments, or inquiries. We're here to help!
+          Feel free to reach out to us with any questions comments or inquiries. We&apos;re here to help!
         </p>
         <ul className="space-y-4">
           <li>
