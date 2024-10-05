@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -38,3 +39,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # perfume-web
 >>>>>>> 258eeeb8ded29576d130c8660986c2caccdcc335
+=======
+# perfume-website
+>>>>>>> 359498f881432f4cede23c4dbd3018ad76d31e4f
