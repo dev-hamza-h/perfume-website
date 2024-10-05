@@ -1,13 +1,6 @@
 import Image from "next/image";
 
 export default function Home()  {
-  const handleScroll = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <main className="bg-gray-50">
       {/* Header Placeholder to Offset Fixed Header */}
@@ -19,6 +12,7 @@ export default function Home()  {
           src="/images/pexels-didsss-1653085.jpg"
           alt="Perfume"
           layout="fill"
+          objectFit="fit"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white bg-black bg-opacity-50 p-8">
           <h1 className="text-5xl font-bold">Luxury Redefined</h1>
@@ -29,7 +23,7 @@ export default function Home()  {
           </button>
         </div>
       </div>
-
+       
       {/* Product Section */}
       <div id="product" className="bg-gray-100 py-16">
         <h2 className="text-4xl font-bold text-left mb-8 pl-4">Products</h2>
@@ -38,7 +32,12 @@ export default function Home()  {
             
             {/* Product 1 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src="/images/perfume-8032808.jpg" alt="Perfume 1" className="w-full h-64 object-cover" />
+              <Image src="/images/perfume-8032808.jpg"
+               alt="Perfume 1"  
+               width={1024} 
+               height={256}
+               className="object-cover h-64" 
+              />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Mystic Blossom</h3>
                 <p className="text-gray-600">A floral scent that captures spring's essence.</p>
@@ -51,7 +50,12 @@ export default function Home()  {
 
             {/* Product 2 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src="/images/perfume-7639482.jpg" alt="Perfume 2" className="w-full h-64 object-cover" />
+              <Image src="/images/perfume-7639482.jpg" 
+               alt="Perfume 2" 
+               width={1024} 
+               height={256} 
+               className="object-cover h-64" 
+              />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Ocean Breeze</h3>
                 <p className="text-gray-600">A fresh, aquatic scent perfect for summer days.</p>
@@ -64,7 +68,12 @@ export default function Home()  {
 
             {/* Product 3 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src="/images/perfume-6899766.jpg" alt="Perfume 3" className="w-full h-64 object-cover" />
+              <Image src="/images/perfume-6899766.jpg" 
+               alt="Perfume 3" 
+               width={1024}
+               height={256}
+               className="object-cover h-64"
+              />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Amber Night</h3>
                 <p className="text-gray-600">A deep, amber fragrance for evening elegance.</p>
@@ -77,7 +86,12 @@ export default function Home()  {
 
             {/* Product 4 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src="/images/ai-generated-8786921.png" alt="Perfume 4" className="w-full h-64 object-cover" />
+              <Image src="/images/ai-generated-8786921.png" 
+               alt="Perfume 4" 
+               width={1024}
+               height={256}
+               className="object-cover h-64" 
+              />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Citrus Glow</h3>
                 <p className="text-gray-600">A bright and zesty citrus scent for a refreshing feel.</p>
@@ -90,7 +104,12 @@ export default function Home()  {
 
             {/* Product 5 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src="/images/ai-generated-8727927.jpg" alt="Perfume 5" className="w-full h-64 object-cover" />
+              <Image src="/images/ai-generated-8727927.jpg" 
+               alt="Perfume 5" 
+               width={1024}
+               height={256}
+               className="object-cover h-64" 
+              />
               <div className="p-4">
                 <h3 className="text-lg font-bold">Lavender Dream</h3>
                 <p className="text-gray-600">A calming lavender scent for a peaceful mind.</p>
@@ -119,10 +138,12 @@ export default function Home()  {
         </p>
       </div>
       <div>
-        <img
+        <Image
           src="/images/stylish-young-couple-with-vape-city.jpg"
           alt="Perfume Creation"
-          className="rounded-lg shadow-lg w-[400px] object-cover"
+          width={400}
+          height={256}
+          className="rounded-lg shadow-lg object-cover"
         />
       </div>
      </div>

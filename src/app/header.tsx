@@ -9,16 +9,16 @@ function Header() {
 
   return (
     <header className="bg-stone-950 p-5 border-gray-300 fixed w-full z-10">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row items-center justify-start"> {/* Changed to justify-start */}
         {/* Logo */}
-        <div className="flex-1 flex items-center">
-          <h2 className="text-orange-400 text-2xl font-bold">The Perfume</h2>
+        <div className="flex items-center justify-start"> {/* Left aligned */}
+          <h2 className="text-orange-400 text-xl sm:text-2xl font-bold">The Perfume</h2>
           <span className="text-green-500 ml-1">🍃</span>
         </div>
 
         {/* Links */}
-        <nav>
-          <ul className="flex gap-x-6">
+        <nav className="flex-grow mt-4 sm:mt-0"> {/* Adjusted margin for mobile view */}
+          <ul className="flex justify-center gap-x-4"> 
             <li>
               <a href="#" className="text-stone-100 hover:text-orange-400 transition duration-300" onClick={() => handleScroll("home")}>Home</a>
             </li>
@@ -32,8 +32,7 @@ function Header() {
               <a href="#contact" className="text-stone-100 hover:text-orange-400 transition duration-300" onClick={() => handleScroll("contact")}>Contact</a>
             </li>
           </ul>
-        </nav>
-        <div className="flex-1"></div>
+        </nav>   
       </div>
     </header>
   );
