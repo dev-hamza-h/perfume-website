@@ -33,7 +33,7 @@ export default function Contact() {
                     {/* Contact Information */}
                     <div className="bg-transparent shadow-[0_4px_20px_rgba(0,255,255,0.6)] rounded-lg p-8">
                         <h3 className="text-2xl font-bold text-white mb-6">Our Contact Info</h3>
-                        <p className="text-white mb-6">Feel free to reach out to us with any questions, comments, or inquiries. We're here to help!</p>
+                        <p className="text-white mb-6">Feel free to reach out to us with any questions, comments, or inquiries. We&apos;re here to help!</p>
                         <ul className="list-none pl-0 mb-8">
                             <li className="mb-4">
                                 <span className="font-bold text-orange-300">Address:</span>
